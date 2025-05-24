@@ -4,4 +4,4 @@ MicroChassis is an opinionated implementation of the [Microservices Chassis Patt
 
 ## License
 
-MicroChassis is licensed under the [MIT](LICENSE.txt) license.
+MicroChassis is licensed under the [MIT](LICENSE) license.
