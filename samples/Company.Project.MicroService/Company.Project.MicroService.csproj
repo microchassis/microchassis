@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Company.MicroChassis.AspNetCore/Company.MicroChassis.AspNetCore.csproj" />
+    <ProjectReference Include="../Company.MicroModules.Redis/Company.MicroModules.Redis.csproj" />
+  </ItemGroup>
+
+</Project>
