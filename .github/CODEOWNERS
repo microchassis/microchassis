@@ -5,4 +5,8 @@
 # the repo. Unless a later match takes precedence,
 # @microchassis and @smilyan will be requested for
 # review when someone opens a pull request.
-*       @microchassis @smilyan
+*                   @microchassis @smilyan
+
+# To protect the repository fully against unauthorized changes, 
+# @microchassis will be the owner of the .github folder
+/.github/           @microchassis
