@@ -11,7 +11,7 @@ public class IHostBuilderExtensionsTests
     {
         var hostBuilder = default(IHostBuilder);
 
-        Assert.ThrowsException<ArgumentNullException>(() => hostBuilder!.AddMicroChassis<HostBuilderMicroChassis>());
+        Assert.Throws<ArgumentNullException>(() => hostBuilder!.AddMicroChassis<HostBuilderMicroChassis>());
     }
 
     [TestMethod]

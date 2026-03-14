@@ -9,7 +9,7 @@ public class MicroChassisTests
     [TestMethod]
     public void MicroChassis_ShouldThrowArgumentNullException_WhenModuleIsNull()
     {
-        Assert.ThrowsException<ArgumentNullException>(() => new TestableMicroChassisWithModuleNullInstance());
+        Assert.Throws<ArgumentNullException>(() => new TestableMicroChassisWithModuleNullInstance());
     }
 
     [TestMethod]
@@ -18,7 +18,7 @@ public class MicroChassisTests
         var host = (TestableMicroChassisHost)default;
         var chassis = new MicroChassis<TestableMicroChassisHost>();
 
-        Assert.ThrowsException<ArgumentNullException>(() => chassis.Setup(host));
+        Assert.Throws<ArgumentNullException>(() => chassis.Setup(host));
     }
 
     [TestMethod]
@@ -114,7 +114,7 @@ public class MicroChassisTests
             index++;
         });
 
-        Assert.ThrowsException<IOException>(() => chassis.Setup(host));
+        Assert.Throws<IOException>(() => chassis.Setup(host));
 
         index = 0;
         chassis.MockedModulesInstances.ForEach(mockedModule =>
