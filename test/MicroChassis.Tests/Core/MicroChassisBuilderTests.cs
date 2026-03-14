@@ -11,7 +11,7 @@ public class MicroChassisBuilderTests
         var host = default(TestableMicroChassisHost);
         var chassis = new MicroChassis<TestableMicroChassisHost>();
 
-        Assert.ThrowsException<ArgumentNullException>(() => new MicroChassisBuilder<TestableMicroChassisHost>(host!, chassis));
+        Assert.Throws<ArgumentNullException>(() => new MicroChassisBuilder<TestableMicroChassisHost>(host!, chassis));
     }
 
     [TestMethod]
@@ -20,7 +20,7 @@ public class MicroChassisBuilderTests
         var host = new TestableMicroChassisHost();
         var chassis = default(MicroChassis<TestableMicroChassisHost>);
 
-        Assert.ThrowsException<ArgumentNullException>(() => new MicroChassisBuilder<TestableMicroChassisHost>(host, chassis!));
+        Assert.Throws<ArgumentNullException>(() => new MicroChassisBuilder<TestableMicroChassisHost>(host, chassis!));
     }
 
     [TestMethod]
@@ -50,7 +50,7 @@ public class MicroChassisBuilderTests
         var builder = new MicroChassisBuilder<TestableMicroChassisHost>(host, chassis);
         var module = default(IMicroModule<TestableMicroChassisHost>);
 
-        Assert.ThrowsException<ArgumentNullException>(() => builder.Mount(module!));
+        Assert.Throws<ArgumentNullException>(() => builder.Mount(module!));
     }
 
     [TestMethod]

@@ -11,7 +11,7 @@ public class WebApplicationBuilderExtensionsTests
     {
         var webApplicationBuilder = default(WebApplicationBuilder);
 
-        Assert.ThrowsException<ArgumentNullException>(() => webApplicationBuilder!.AddMicroChassis<WebApplicationBuilderMicroChassis>());
+        Assert.Throws<ArgumentNullException>(() => webApplicationBuilder!.AddMicroChassis<WebApplicationBuilderMicroChassis>());
     }
 
     [TestMethod]

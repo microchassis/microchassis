@@ -11,7 +11,7 @@ public class WebApplicationExtensionsTests
     {
         var webApplication = default(WebApplication);
 
-        Assert.ThrowsException<ArgumentNullException>(() => webApplication!.UseMicroChassis<WebApplicationMicroChassis>());
+        Assert.Throws<ArgumentNullException>(() => webApplication!.UseMicroChassis<WebApplicationMicroChassis>());
     }
 
     [TestMethod]
